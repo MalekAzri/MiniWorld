@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini World</title>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" >
+    <link rel="stylesheet" href="ex2.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-3 bg-dark-subtle">
+        <input type="text" class="text form-control" placeholder="Texte à éditer" title="Veuillez entrer le texte à éditer">
+        </div>
+    
+        <div class="col-12 col-md-3 bg-dark-subtle">
+        <label for="colorPicker" class="couleur form-label">Couleur :</label>
+        <input type="color" class="color form-control form-control-color" id="colorPicker" value="#add8e6" title="Choisissez votre couleur">
+        </div>
+
+        <div class="col-12 col-md-3 bg-dark-subtle">
+        <label for="fontSelector" class="font">Choisir une police :</label>
+        <select class="form-control" id="fontSelector">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+        </select>
+        </div>
+        <div class="col-12 col-md-3 bg-dark-subtle">
+            <label for="sizeSelector" class=" form-label ">Choisir une taille:</label>
+            <input type="number" class="taille form-control" id="sizeSelector" min="1" max="100" step="1" value="10">
+          </div>
+    </div>
+<button type="button" class="button btn btn-info" tabindex="0" >Change</button>
+
+
+<div class="info p-3 mb-2 bg-dark-subtle " >
+    <div class="affichage"> </div>
+</div>
+
+
+    
+
+
+
+<script src="ex2.js"></script>
+</body>
+</html>
