@@ -39,7 +39,7 @@ function afficher(){
     apply(aff,'font-family',f.value);
     let t=document.body.querySelector(".taille");
     console.log(t.value);
-    if(t.value>t.max){
+    if(Number(t.value)>t.max){
         alert("vous avez depassé la valeur maximale de taille!(100)");
         location.reload();
     }
